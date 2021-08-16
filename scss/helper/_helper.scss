@@ -1,0 +1,18 @@
+@import "brand-pallete";
+@import "mixin";
+
+/***************** brand styling ***********************/
+.is-primary-brand-bg{
+  background: $primary-brand-color;
+}
+
+.is-height-100pc{
+  height: 100%;
+}
+
+/***************** utility classes ********************/
+.margin-padding-zero{
+  @include margin-padding-zero;
+}
+
+//Content is column flex

@@ -1,0 +1,12 @@
+@mixin margin-padding-zero{
+  margin: 0;
+  padding: 0;
+}
+
+// Makes item flex - direction: column flex
+@mixin flex-column-direction{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}

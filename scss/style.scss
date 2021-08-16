@@ -1,0 +1,133 @@
+
+@import "bulma";
+@import "helper/brand-pallete";
+@import "helper/helper";
+@import "helper/mixin";
+
+
+/****************** Typography ********************************/
+h1{
+  font: {
+    size: 50px;
+    weight: bolder;
+  }
+  line-height: 70px;
+}
+
+/*---------------Section area style---------------------------*/
+section{
+  padding: 20px;
+}
+
+/******************* hero area **********************************/
+.hero-area{
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+  .columns{
+    margin-bottom: 0;
+  }
+
+  .left-hero-section{
+  }
+
+  .content-is-flex{
+    @include flex-column-direction;
+  }
+
+  .right-area{
+
+    .hero-image-container{
+    }
+  }
+}
+
+
+/************************ Benefits area -----------------------------*/
+.benefits-section{
+  .left-column-benefits{
+    .left-item{
+      @include flex-column-direction;
+      @include margin-padding-zero;
+      height: 100vh;
+    }
+  }
+
+  .sticky-container{
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    .sticky-area{
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .sticky-item{
+        height: 100vh;
+        width: 100%;
+        @include margin-padding-zero;
+        @include flex-column-direction;
+        align-items: center;
+        transition: all 0.3s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img{
+          height: 75vh;
+        }
+      }
+    }
+
+    //Animation helper classes
+    .sticky-opacity-zero{
+      opacity: 0;
+    }
+
+    .sticky-opacity-one{
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &{
+      display: none;
+    }
+  }
+}
+
+
+
+.benefits-section-mobile{
+  img{
+    height: 300px;
+    align-items: center;
+  }
+  
+  @media (min-width: $tablet) {
+    &{
+      display: none;
+    }
+  }
+}
+
+
+/************************ early access area -----------------------------*/
+.early-access{
+  background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2{
+    color: white;
+  }
+}

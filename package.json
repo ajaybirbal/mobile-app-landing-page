@@ -1,0 +1,32 @@
+{
+  "name": "sass-practise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/ -o dist/css/",
+    "sass-w": "node-sass -w scss/ -o dist/css/",
+    "build-js": "browserify js/main.js -o dist/js/main.js",
+    "build-assets": "npm run sass && npm run build-js",
+    "minify-css": "css-minify -d dist/css -o dist/css",
+    "min-all": "npm run minify-css",
+    "purge-css": "purgecss --css dist/css/style.min.css --content dist/index.html -o dist/css/",
+    "min-purge": "npm run min-all && npm run purge-css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "css-minify": "^2.0.0",
+    "dart-sass": "^1.25.0",
+    "install": "^0.13.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
+    "npm": "^7.20.5",
+    "purgecss": "^4.0.3",
+    "sass": "^1.37.5"
+  }
+}
