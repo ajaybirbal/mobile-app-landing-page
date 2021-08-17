@@ -7891,9 +7891,11 @@ section {
   margin: 0;
   padding: 0;
   background-color: #FEE140;
-  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%); }
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  position: relative; }
   .hero-area .columns {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    height: 100%; }
   .hero-area .left-hero-section {
     display: flex;
     flex-direction: column;
@@ -7904,6 +7906,17 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
+  .hero-area .right-area .hero-image-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero-area .right-area .hero-image-container img {
+      height: 100%; }
+  .hero-area svg {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 /************************ Benefits area -----------------------------*/
 .benefits-section .left-column-benefits .left-item {
@@ -7958,12 +7971,29 @@ section {
   .benefits-section-mobile {
     display: none; } }
 
+.benefits-section-mobile .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /************************ early access area -----------------------------*/
 .early-access {
   background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .early-access h2 {
     color: white; }
+
+/************************ footer area -----------------------------*/
+footer ul li a {
+  color: white;
+  text-decoration: none; }
+  footer ul li a:hover {
+    color: white;
+    text-decoration: underline; }
+  footer ul li a:visited {
+    color: white;
+    text-decoration: none; }

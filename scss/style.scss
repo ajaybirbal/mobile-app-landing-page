@@ -27,12 +27,18 @@ section{
   padding: 0;
   background-color: #FEE140;
   background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  position: relative;
 
   .columns{
     margin-bottom: 0;
+    height: 100%;
   }
 
   .left-hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .content-is-flex{
@@ -42,7 +48,21 @@ section{
   .right-area{
 
     .hero-image-container{
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        height: 100%;
+      }
     }
+  }
+
+  svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 
@@ -116,6 +136,12 @@ section{
       display: none;
     }
   }
+
+  .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 
@@ -126,8 +152,33 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   h2{
     color: white;
   }
 }
+
+/************************ footer area -----------------------------*/
+footer{
+  ul{
+    li{
+      a{
+        color: white;
+        text-decoration: none;
+
+        &:hover{
+          color: white;
+          text-decoration: underline;
+        }
+
+        &:visited{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+

@@ -3,16 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <!-----------------------------Hero area------------------------------>
-    <section class="hero-area">
+<!-----------------------------navigation area------------------------------>
+<nav class="navbar is-black px-5 py-2" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item has-text-white is-size-4" href="#">
+            ListenMusic
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu has-background-black">
+        <div class="navbar-start">
+
+        </div>
+
+        <div class="navbar-end has-background-black">
+            <a class="navbar-item has-text-white">
+                Home
+            </a>
+
+            <a class="navbar-item has-text-white">
+                Premium
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable has-background-black">
+                <a class="navbar-link has-text-white">
+                    Support
+                </a>
+
+                <div class="navbar-dropdown has-background-black">
+                    <a class="navbar-item has-text-white">
+                        Email
+                    </a>
+                    <a class="navbar-item has-text-white">
+                        Phone
+                    </a>
+                    <a class="navbar-item has-text-white">
+                        Chat
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item has-text-white">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary px-5">
+                        <strong>Join Now!</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-----------------------------Hero area------------------------------>
+    <section class="hero-area py-5">
         <div>
-            <div class="columns is-height-100pc">
+            <div class="columns">
                 <div class="column is-half-tablet is-full-mobile content-is-flex p-6 left-hero-section">
-                    <h1 class="mb-5">Listening Music Never Fun Like Before!</h1>
+                    <h1 class="mb-5 is-capitalized">Listening music Never Fun Like Before!</h1>
                     <p class="subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam at autem eius excepturi iusto perferendis quo tempora? Aspernatur at deleniti earum excepturi expedita maxime provident quo rerum totam voluptatibus?
                     </p>
@@ -22,10 +84,12 @@
                     <a href="#" class="button is-primary is-medium px-6 mt-5">Sign Up Now</a>
                 </div>
                 <div class="column right-area is-half-tablet is-full-mobile is-clipped m-0 p-0">
-                    <div class="hero-image-container"></div>
+                    <div class="hero-image-container mt-5 mb-6">
+                        <img src="img/homescreen.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#fff" fill-opacity="1" d="M0,224L1440,128L1440,320L0,320Z"></path></svg>        </div>
     </section>
 
     <!----------------------------- sticky benefits section ----------------------------------->
@@ -36,16 +100,16 @@
             <div class="column is-half-tablet left-column-benefits m-0 p-0">
                 <div class="left-item pl-5">
                     <h3 class="mb-3">Discover New  Music Easily.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
+                    <p class="is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
                 </div>
                 <div class="left-item pl-5 ">
                     <h3 class="mb-3">Play Music Effortlessly!</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <p class="is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </div>
                 <div class="left-item pl-5">
                     <h3 class="mb-3">One Touch Lyrics Finder</h3>
-                    <p>Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis iure labore nisi porro quaerat quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eum excepturi nisi quasi rerum veritatis.</p>
+                    <p class="is-size-5">Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
+                    <p class="is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis iure labore nisi porro quaerat quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eum excepturi nisi quasi rerum veritatis.</p>
                 </div>
             </div>
 
@@ -64,7 +128,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -73,36 +136,36 @@
     <section class="section benefits-section-mobile">
         <div class="columns">
             <div class="column is-full-mobile">
-                <h3 class="mb-3">Discover New  Music Easily.</h3>
-                <p  class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
+                <h3 class="mb-3 is-capitalized">Discover New  Music Easily.</h3>
+                <p  class="mb-3 is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
             </div>
-            <div class="column is-full-mobile">
+            <div class="column is-full-mobile img-container">
                 <img src="img/Home.svg" alt="">
             </div>
         </div>
         <div class="columns">
             <div class="column is-full-mobile">
-                <h3 class="mb-3">Play Music Effortlessly!</h3>
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h3 class="mb-3 is-capitalized">Play Music Effortlessly!</h3>
+                <p class="mb-3 is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             </div>
-            <div class="column is-full-mobile">
+            <div class="column is-full-mobile img-container">
                 <img src="img/now-playing.svg" alt="">
             </div>
         </div>
         <div class="columns">
             <div class="column is-full-mobile">
-                <h3 class="mb-3">One Touch Lyrics Finder</h3>
-                <p  class="mb-3">Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis iure labore nisi porro quaerat quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eum excepturi nisi quasi rerum veritatis.</p>
+                <h3 class="mb-3 is-capitalized">One Touch Lyrics Finder</h3>
+                <p  class="mb-3 is-size-5">Commodi, unde, voluptas? Accusamus blanditiis eaque fugiat illo itaque maiores reiciendis totam.</p>
+                <p class="mb-3 is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis iure labore nisi porro quaerat quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eum excepturi nisi quasi rerum veritatis.</p>
             </div>
-            <div class="column is-full-mobile">
+            <div class="column is-full-mobile img-container">
                 <img src="img/lyrics.svg" alt="">
             </div>
         </div>
     </section>
 
     <!----------------------------early access form ----------------------------------------------------------->
-    <section class="early-access p-6">
+    <section class="section early-access p-6">
         <h2 class="is-white mb-5 pt-5">Join Early Access: </h2>
         <div class="field has-addons">
             <div class="control">
@@ -115,6 +178,62 @@
             </div>
         </div>
     </section>
+
+    <!---------------------------- footer area ----------------------------------------------------------->
+    <footer class="footer p-6 has-background-black">
+        <div class="columns">
+            <div class="column">
+                <p class="is-size-5 mb-2 has-text-white">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="is-size-5 mb-2 has-text-white">Support</p>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Online Chat</a></li>
+                    <li><a href="#">Our Offices</a></li>
+                </ul>
+                <p class="is-size-5 mb-2 mt-5 has-text-white"><span><i class="far fa-clock mr-2 fa-xs"></i></span>Timings</p>
+                <p class="is-size-6 has-text-white">Mon - Fri</p>
+                <p class="is-size-6 has-text-white">9 AM - 9 PM</p>
+            </div>
+            <div class="column">
+                <p class="is-size-5 mb-2 has-text-white">Legal</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">GDPR Compliance</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="is-size-5 mb-2 has-text-white">Social</p>
+                <i class="fab fa-instagram has-text-white fa-lg mr-2"></i>
+                <i class="fab fa-facebook-square has-text-white fa-lg mr-2"></i>
+                <i class="fab fa-youtube has-text-white fa-lg mr-2"></i>
+                <i class="fab fa-snapchat-square has-text-white fa-lg"></i>
+
+                <p class="is-size-5 mb-2 mt-5 has-text-white">Subscribe to Newsletter: </p>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Enter Email: ">
+                    </div>
+                    <div class="control">
+                        <a class="button is-info">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="has-text-white is-size-6 mt-4 has-text-centered">©2021 - ListenMusic LLP. All rights reserved.</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
